@@ -1,0 +1,36 @@
+import { Page0 as Page0Default } from 'activeBook-core/pages/Page0';
+
+import { useAudio } from 'activeBook-core/hooks/effects/audio';
+import { useFlashlight } from 'activeBook-core/hooks/effects/flashlight';
+import { useVibration } from 'activeBook-core/hooks/effects/vibration';
+
+export const Page0 = () => {
+  const { flashlightOn } = useFlashlight();
+  const { vibrationOn } = useVibration();
+
+  const audioInst = useAudio({
+    id: 'page-0-start-reading',
+    page: 0,
+    src: './assets/book_data/audios/sounds/sword.mp3',
+    fadeOutWhenUnload: false,
+    onPlay() {
+      vibrationOn(200);
+      flashlightOn(200);
+    },
+  });
+
+  const goCallback = async () => {
+    await audioInst?.play();
+  };
+
+  const subHeader = 'Этот мини-рассказик следует воспринимать как забавную техно-демку. ' +
+    'Я хотел показать пример того, что может получиться, если писать книжку в формате activeBook';
+
+  return (
+    <Page0Default
+      header="По ту сторону изгороди"
+      subHeader={subHeader}
+      goCallback={goCallback}
+    />
+  );
+};

@@ -1,0 +1,11 @@
+// declaration.d.ts
+declare module '*.scss';
+
+declare module '*.svg' {
+  const content: any;
+  export default content;
+}
+
+declare const isDemoMode: boolean;
+
+declare module 'circletype';
