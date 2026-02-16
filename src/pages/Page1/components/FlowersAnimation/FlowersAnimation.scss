@@ -1,0 +1,63 @@
+.Flower1 {
+  position: absolute;
+  z-index: 2;
+  bottom: 10%;
+  left: -50px;
+
+  height: 250px;
+  width: 250px;
+}
+
+.Flower2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+
+  height: 250px;
+  width: 250px;
+}
+
+.Flower3 {
+  position: absolute;
+  z-index: 2;
+  bottom: 10%;
+  right: -50px;
+
+  height: 250px;
+  width: 250px;
+}
+
+.Flower4 {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: -50px;
+
+  height: 250px;
+  width: 250px;
+}
+
+.Flower5 {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  height: 250px;
+  width: 250px;
+}
+
+.Flower6 {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  right: -50px;
+
+  height: 250px;
+  width: 250px;
+}
