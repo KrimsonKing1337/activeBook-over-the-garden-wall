@@ -4,7 +4,7 @@ import { useAudio } from 'activeBook-core/hooks/effects/audio';
 
 export const Page1 = () => {
   useAudio({
-    id: 'page1-alarm-clock',
+    id: 'page-1_alarm-clock',
     page: 1,
     src: './assets/book_data/audios/sounds/alarm-clock.mp3',
     playOnLoad: true,
