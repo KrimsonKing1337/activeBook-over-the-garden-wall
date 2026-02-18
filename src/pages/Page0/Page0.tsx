@@ -4,7 +4,7 @@ export const Page0 = () => {
   return (
     <Page0Default
       header="По ту сторону изгороди."
-      subHeader="Жанр: sci-fi."
+      subHeader="Жанр: sci-fi. Кстати, здесь есть пасхалки"
     />
   );
 };
