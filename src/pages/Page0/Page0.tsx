@@ -11,6 +11,7 @@ export const Page0 = () => {
   const audioInst = useAudio({
     id: 'page-0_sword',
     page: 0,
+    // todo: вернуть понятие oneShot, этот звук должен всегда проигрываться до конца
     src: './assets/book_data/audios/sounds/sword.mp3',
     fadeOutWhenUnload: false,
     onPlay() {
