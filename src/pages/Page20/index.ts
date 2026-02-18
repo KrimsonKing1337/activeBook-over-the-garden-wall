@@ -1,0 +1,4 @@
+import { Page20 } from './Page20';
+
+export { Page20 };
+export default Page20; // default нужен для React.lazy()

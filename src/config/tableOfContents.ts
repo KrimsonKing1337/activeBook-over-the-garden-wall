@@ -11,10 +11,14 @@ export const tableOfContents: TableOfContents = [
     subtitle: 'Обратный отсчёт',
     pageNumber: 7,
   },
-
   {
     title: 'Глава 3',
     subtitle: 'Дурной сон',
     pageNumber: 12,
+  },
+  {
+    title: 'Глава 4',
+    subtitle: 'Бесконечный поток информации',
+    pageNumber: 19,
   },
 ];
