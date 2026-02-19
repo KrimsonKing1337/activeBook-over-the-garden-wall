@@ -1,6 +1,16 @@
+import { useAudio } from 'activeBook-core/hooks/effects/audio';
+
 import { PageWrapper, WithModal, P } from 'activeBook-core/components';
 
 export const Page2 = () => {
+  useAudio({
+    id: 'page-2_cooking-and-tv',
+    page: 2,
+    src: './assets/book_data/audios/sounds/cooking-and-tv.mp3',
+    playOnLoad: true,
+    loop: true,
+  });
+
   const Comment = (
     <WithModal text="телевизор" triggerType="author" mode="text">
       в какой-то из предыдущих версий в этом месте включалось видео в модальном окне,

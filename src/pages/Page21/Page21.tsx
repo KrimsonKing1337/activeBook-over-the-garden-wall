@@ -1,6 +1,16 @@
 import { PageWrapper, P, WithModal, Img } from 'activeBook-core/components';
+import { useAudio } from 'activeBook-core/hooks/effects/audio';
 
 export const Page21 = () => {
+  useAudio({
+    id: 'page-21_fly-ship-engine-heartbeat',
+    page: 13,
+    src: './assets/book_data/audios/sounds/fly-ship-engine-heartbeat.mp3',
+    type: 'bg',
+    loop: true,
+    playOnLoad: true,
+  });
+
   const EasterEgg = (
     <WithModal text="поездка в метро" triggerType="egg" eggId="page-21">
       <Img src="./assets/book_data/gifs/granny-in-hyper.gif" />

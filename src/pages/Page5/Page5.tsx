@@ -6,7 +6,7 @@ export const Page5 = () => {
   useAudio({
     id: 'page-5_electric-gate-close',
     page: 5,
-    src: '/assets/book_data/audios/sounds/electric-gate-close.mp3',
+    src: './assets/book_data/audios/sounds/electric-gate-close.mp3',
     playOnLoad: true,
   });
 

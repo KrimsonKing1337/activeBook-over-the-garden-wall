@@ -1,6 +1,15 @@
+import { useAudio } from 'activeBook-core/hooks/effects/audio';
+
 import { PageWrapper, WithModal, P } from 'activeBook-core/components';
 
 export const Page9 = () => {
+  useAudio({
+    id: 'page-2_car-door-close',
+    page: 9,
+    src: './assets/book_data/audios/sounds/car-door-close.mp3',
+    playOnLoad: true,
+  });
+
   const Comment1 = (
     <WithModal text="особенно близка." triggerType="author" mode="text">
       Собственно, и я очень люблю зелень.

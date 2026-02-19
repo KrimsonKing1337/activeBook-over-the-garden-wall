@@ -13,20 +13,37 @@ export const Page41 = () => {
     loop: true,
   });
 
+  const valhalla = useAudio({
+    id: 'page-41_valhalla',
+    page: 41,
+    src: './assets/book_data/audios/music/valhalla.mp3',
+    playOnLoad: false,
+  });
+
   const { sideShadowOn } = useSideShadow({
     color: 'caramel',
     speed: 364,
     isActiveDefault: false,
   });
 
-  const easterEggOnClickHandler = () => {
+  const easterEgg1OnClickHandler = () => {
     caramelldansen?.play();
     sideShadowOn();
   };
 
-  const EasterEgg = (
-    <EasterEggComponent onClick={easterEggOnClickHandler} id="page-41">
+  const easterEgg2OnClickHandler = () => {
+    valhalla?.play();
+  };
+
+  const EasterEgg1 = (
+    <EasterEggComponent onClick={easterEgg1OnClickHandler} id="page-41-1">
       настроение
+    </EasterEggComponent>
+  );
+
+  const EasterEgg2 = (
+    <EasterEggComponent onClick={easterEgg2OnClickHandler} id="page-41-2">
+      Вальгаллу,
     </EasterEggComponent>
   );
 
@@ -80,7 +97,7 @@ export const Page41 = () => {
       </P>
 
       <P>
-        – Типа в рай? – уточнил Егор. Вообще, описанием больше походило на Вальгаллу,
+        – Типа в рай? – уточнил Егор. Вообще, описанием больше походило на {EasterEgg2}
         но он не стал это произносить.
       </P>
 
@@ -101,7 +118,7 @@ export const Page41 = () => {
       <P>
         – Всё не так сложно, как тебе кажется.
         Не бери в голову, мой друг. Пойдём же.
-        Я знаю, что поможет поднять тебе {EasterEgg}
+        Я знаю, что поможет поднять тебе {EasterEgg1}
       </P>
     </PageWrapper>
   );

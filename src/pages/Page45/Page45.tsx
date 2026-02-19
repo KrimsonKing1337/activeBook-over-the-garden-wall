@@ -59,7 +59,7 @@ export const Page45 = () => {
       <Spoiler label="Копирайты">
         <div>
           <P>
-            Звуки взяты с сайтов freesounds.org и noisefx.ru
+            Звуки взяты с сайтов freesounds.org, noisefx.ru и pixabay.com
           </P>
 
           <P>

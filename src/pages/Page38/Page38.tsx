@@ -1,6 +1,14 @@
 import { PageWrapper, P } from 'activeBook-core/components';
+import { useAudio } from 'activeBook-core/hooks/effects/audio';
 
 export const Page38 = () => {
+  useAudio({
+    id: 'page-38_nervously-searching-for-the-medicine',
+    page: 38,
+    src: './assets/book_data/audios/sounds/nervously-searching-for-the-medicine.mp3',
+    playOnLoad: true,
+  });
+
   return (
     <PageWrapper>
       <P>

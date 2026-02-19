@@ -7,7 +7,7 @@ export const Page14 = () => {
   useAudio({
     id: 'page-14_rain-and-thunder',
     page: 14,
-    src: '/assets/book_data/audios/sounds/rain-and-thunder.mp3',
+    src: './assets/book_data/audios/sounds/rain-and-thunder.mp3',
     type: 'bg',
     loop: true,
     playOnLoad: true,

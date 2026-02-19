@@ -5,7 +5,7 @@ export const Page13 = () => {
   useAudio({
     id: 'page-13_fly-ship-engine',
     page: 13,
-    src: '/assets/book_data/audios/sounds/fly-ship-engine.mp3',
+    src: './assets/book_data/audios/sounds/fly-ship-engine.mp3',
     type: 'bg',
     loop: true,
     playOnLoad: true,

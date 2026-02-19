@@ -7,7 +7,7 @@ export const Page39 = () => {
   const sound = useAudio({
     id: 'page-39_atari',
     page: 39,
-    src: '/assets/book_data/audios/sounds/atari.mp3',
+    src: './assets/book_data/audios/sounds/atari.mp3',
   });
 
   const Action = (
