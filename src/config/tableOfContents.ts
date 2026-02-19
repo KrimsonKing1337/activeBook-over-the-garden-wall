@@ -21,4 +21,13 @@ export const tableOfContents: TableOfContents = [
     subtitle: 'Бесконечный поток информации',
     pageNumber: 19,
   },
+  {
+    title: 'Глава 5',
+    subtitle: 'По ту сторону изгороди',
+    pageNumber: 35,
+  },
+  {
+    title: 'Титры',
+    pageNumber: 45,
+  },
 ];
