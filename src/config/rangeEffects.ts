@@ -15,4 +15,20 @@ export const rangeEffects: RangeEffects = [
       loop: true,
     },
   },
+  {
+    id: 'page-31-32_promise-from-distance-days',
+    type: 'audio',
+    range: [
+      {
+        from: 31,
+        to: 32,
+      },
+    ],
+    options: {
+      src: './assets/book_data/audios/music/Promise_From_Distant_Days.mp3',
+      type: 'music',
+      playOnLoad: true,
+      loop: true,
+    },
+  },
 ];
