@@ -17,7 +17,7 @@ export const Page42 = () => {
   });
 
   const EasterEgg = (
-    <WithModal text="звук в этом месте " triggerType="egg" eggId="page-42">
+    <WithModal text="звук в этом месте " triggerType="egg" eggId="page-42_sound-like-heaven-vk">
       <Img src="./assets/book_data/images/sound-like-heaven-vk.png" />
     </WithModal>
   );

@@ -9,7 +9,6 @@ import { useAudio } from 'activeBook-core/hooks/effects/audio';
 import { PageWrapper, P, WithModal } from 'activeBook-core/components';
 import { EasterEgg as EasterEggComponent } from 'activeBook-core/components/ColoredTextTrigger/EasterEgg';
 
-
 export const Page41 = () => {
   const audioBgInstances = useSelector(audioBgEffectsSelectors.audioInstances);
 
@@ -62,13 +61,13 @@ export const Page41 = () => {
 
   const EasterEgg1 = (
     <EasterEggComponent onClick={easterEgg1OnClickHandler} id="page-41-1">
-      настроение
+      настроение.
     </EasterEggComponent>
   );
 
   const EasterEgg2 = (
     <EasterEggComponent onClick={easterEgg2OnClickHandler} id="page-41-2">
-      Вальгаллу,
+      Вальгаллу,&nbsp;
     </EasterEggComponent>
   );
 

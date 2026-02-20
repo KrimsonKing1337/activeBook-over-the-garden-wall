@@ -2,8 +2,12 @@ import { PageWrapper, WithModal, Video, H1, H2, P } from 'activeBook-core/compon
 
 export const Page22 = () => {
   const EasterEgg = (
-    <WithModal text="«Вот это поворот»," triggerType="egg" eggId="page-21">
-      <Video id="page-22_wow_turn" src="./assets/book_data/videos/wow_turn.mp4" />
+    <WithModal text="«Вот это поворот»," triggerType="egg" eggId="page-22_wow_turn">
+      <Video
+        id="page-22_wow_turn"
+        src="./assets/book_data/videos/wow_turn.mp4"
+        muted={false}
+      />
     </WithModal>
   );
 

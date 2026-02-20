@@ -14,9 +14,9 @@ export const Page43 = () => {
 
   const EasterEgg = (
     <WithModal
-      text="Люди приветствовали его будто старого доброго друга."
+      text=" Люди приветствовали его будто старого доброго друга."
       triggerType="egg"
-      eggId="page-43"
+      eggId="page-43_Efremov"
     >
       <Img src="./assets/book_data/gifs/Efremov.gif" />
     </WithModal>

@@ -2,7 +2,7 @@ import { PageWrapper, P, WithModal, Img } from 'activeBook-core/components';
 
 export const Page40 = () => {
   const EasterEgg = (
-    <WithModal text="главный вопрос жизни, вселенной и всего такого." triggerType="egg" eggId="page-39">
+    <WithModal text="главный вопрос жизни, вселенной и всего такого." triggerType="egg" eggId="page-40_42">
       <Img src="./assets/book_data/images/42.jpg" />
     </WithModal>
   );

@@ -31,7 +31,7 @@ export const Page8 = () => {
 
   const EasterEgg = (
     <EasterEggComponent onClick={() => jimmyAudio?.play()} id="page-8_jimmy">
-      очень любил.
+      очень любил.&nbsp;
     </EasterEggComponent>
   );
 
