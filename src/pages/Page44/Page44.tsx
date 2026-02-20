@@ -8,6 +8,7 @@ export const Page44 = () => {
     page: 44,
     src: './assets/book_data/audios/music/Scott-Pilgrim-opening.mp3',
     loop: false,
+    playOnLoad: true,
   });
 
   const Comment = (

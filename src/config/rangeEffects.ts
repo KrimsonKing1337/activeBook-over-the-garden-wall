@@ -13,6 +13,7 @@ export const rangeEffects: RangeEffects = [
     options: {
       src: './assets/book_data/audios/music/Manoa-Jumaira-Drive.mp3',
       type: 'music',
+      relativeVolume: 30,
       playOnLoad: true,
       loop: true,
     },

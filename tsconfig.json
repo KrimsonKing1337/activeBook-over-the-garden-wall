@@ -6,13 +6,13 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "allowJs": false,
+    "allowJs": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": true,
     "resolveJsonModule": true,
     "baseUrl": "./src",
   },
-  "exclude": ["node_modules", "dist"],
+  "exclude": ["node_modules", "dist", "js-rain"],
   "include": ["./**/*"]
 }

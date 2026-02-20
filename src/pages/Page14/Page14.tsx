@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
+
 import { PageWrapper, WithModal, P } from 'activeBook-core/components';
 
 import { useAudio } from 'activeBook-core/hooks/effects/audio';
 import { useRain } from 'activeBook-core/hooks/effects/flashlight/rain';
+
+import { startRain } from './js-rain/src/startRain.js';
 
 export const Page14 = () => {
   useAudio({
@@ -15,6 +19,12 @@ export const Page14 = () => {
 
   useRain();
 
+  useEffect(() => {
+    setTimeout(() => {
+      startRain(document.querySelector('#canvas'));
+    });
+  }, []);
+
   const Comment = (
     <WithModal text="Снился дождь." triggerType="author" mode="text">
       Очень горжусь тем, как круто выглядит здесь эффект дождя. Особенно со вспышкой
@@ -23,6 +33,19 @@ export const Page14 = () => {
 
   return (
     <PageWrapper>
+      <canvas
+        id="canvas"
+        style={{
+          width: '100%',
+          height: '100%',
+          backgroundColor: 'transparent',
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          pointerEvents: 'none',
+        }}
+      />
+
       <P>
         {Comment} Сильный, тяжёлый. Наш герой не видел дождей с осени и уже успел соскучиться по этому
         природному явлению. Пусть просто во сне, но всё равно приятно. Плюс к этому ещё и не мокнешь.
