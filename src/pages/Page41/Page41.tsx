@@ -1,12 +1,18 @@
 import { useEffect } from 'react';
 
+import { useSelector } from 'activeBook-core/store/store';
+import { audioBgEffectsSelectors } from 'activeBook-core/store/effects/audio/audioBg';
+
 import { useSideShadow } from 'activeBook-core/hooks/effects/side/shadow';
 import { useAudio } from 'activeBook-core/hooks/effects/audio';
 
 import { PageWrapper, P, WithModal } from 'activeBook-core/components';
 import { EasterEgg as EasterEggComponent } from 'activeBook-core/components/ColoredTextTrigger/EasterEgg';
 
+
 export const Page41 = () => {
+  const audioBgInstances = useSelector(audioBgEffectsSelectors.audioInstances);
+
   const caramelldansen = useAudio({
     id: 'page-41_caramelldansen',
     page: 41,
@@ -31,9 +37,13 @@ export const Page41 = () => {
   const documentClickHandler = () => {
     caramelldansen?.stop();
     sideShadowOff();
+
+    audioBgInstances['page-1-45_Manoa-Jumaira-Drive']?.play();
   };
 
   const easterEgg1OnClickHandler = () => {
+    audioBgInstances['page-1-45_Manoa-Jumaira-Drive']?.pause();
+
     caramelldansen?.play();
     sideShadowOn();
 
