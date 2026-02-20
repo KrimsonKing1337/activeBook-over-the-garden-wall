@@ -51,7 +51,7 @@ export const Page45 = () => {
       <P>
         Отдельное спасибо: тебе. За то, что прочитал.
         Подписывайся на канал, ставь лайки.
-        Стоп, это же не тот ресурс..
+        Стоп, это же не тот ресурс...
       </P>
 
       <br />
@@ -96,6 +96,8 @@ export const Page45 = () => {
             Jorge "Vasco" Vasconcelo
             <br />
             Juha "Millboy" Myllylä
+            <br />
+            Manoa
           </P>
 
           <P>
