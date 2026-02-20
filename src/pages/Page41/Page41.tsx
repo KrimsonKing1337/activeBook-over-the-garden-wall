@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { useSideShadow } from 'activeBook-core/hooks/effects/side/shadow';
 import { useAudio } from 'activeBook-core/hooks/effects/audio';
 
@@ -20,16 +22,29 @@ export const Page41 = () => {
     playOnLoad: false,
   });
 
-  const { sideShadowOn } = useSideShadow({
+  const { sideShadowOn, sideShadowOff } = useSideShadow({
     color: 'caramel',
     speed: 364,
     isActiveDefault: false,
   });
 
+  const documentClickHandler = () => {
+    caramelldansen?.stop();
+    sideShadowOff();
+  };
+
   const easterEgg1OnClickHandler = () => {
     caramelldansen?.play();
     sideShadowOn();
+
+    setTimeout(() => {
+      document.addEventListener('click', documentClickHandler, { once: true });
+    }, 0);
   };
+
+  useEffect(() => {
+    document.removeEventListener('click', documentClickHandler);
+  }, []);
 
   const easterEgg2OnClickHandler = () => {
     valhalla?.play();
