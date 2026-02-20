@@ -3,7 +3,7 @@ import { useSideText } from 'activeBook-core/hooks/effects/side/text';
 import { PageWrapper, P, WithModal } from 'activeBook-core/components';
 import { SideText } from 'activeBook-core/components/SideEffects/components/SideText';
 
-import sideTextStyles from 'activeBook-core/components/SideEffects/components/SideText/SideText.scss';
+import * as sideTextStyles from 'activeBook-core/components/SideEffects/components/SideText/SideText.scss';
 
 export const Page20 = () => {
   const SideTextTemplate = (
