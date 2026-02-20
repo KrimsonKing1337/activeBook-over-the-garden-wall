@@ -2,7 +2,7 @@ import type { RangeEffects } from 'activeBook-core/@types';
 
 export const rangeEffects: RangeEffects = [
   {
-    id: 'page-1-45_Manoa-Jumaira-Drive',
+    id: 'page-1-30_Manoa-Jumaira-Drive',
     type: 'audio',
     range: [
       {
@@ -18,7 +18,7 @@ export const rangeEffects: RangeEffects = [
     },
   },
   {
-    id: 'page-1-45_Manoa-Jumaira-Drive',
+    id: 'page-33-45_Manoa-Jumaira-Drive',
     type: 'audio',
     range: [
       {
