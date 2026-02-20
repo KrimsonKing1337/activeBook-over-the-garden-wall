@@ -2,6 +2,22 @@ import type { RangeEffects } from 'activeBook-core/@types';
 
 export const rangeEffects: RangeEffects = [
   {
+    id: 'page-1-45_Manoa-Jumaira-Drive',
+    type: 'audio',
+    range: [
+      {
+        from: 1,
+        to: 45,
+      },
+    ],
+    options: {
+      src: './assets/book_data/audios/music/Manoa-Jumaira-Drive.mp3',
+      type: 'music',
+      playOnLoad: true,
+      loop: true,
+    },
+  },
+  {
     id: 'page-3-4_radio',
     type: 'audio',
     range: [{
