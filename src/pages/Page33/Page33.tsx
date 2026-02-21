@@ -11,7 +11,7 @@ export const Page33 = () => {
 
   const Comment1 = (
     <WithModal text="отсыпаясь за всю рабочую неделю." triggerType="author" mode="text">
-      Ах, по-чаще бы такое...
+      Ах, почаще бы такое...
     </WithModal>
   );
 
