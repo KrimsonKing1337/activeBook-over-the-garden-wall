@@ -10,13 +10,13 @@ import {
 export const Page45 = () => {
   const Action1 = (
     <WithModal text="Олег Шилов" triggerType="action">
-      <Img src="/assets/book_data/gifs/Kojima.gif" />
+      <Img src="./assets/book_data/gifs/Kojima.gif" />
     </WithModal>
   );
 
   const Action2 = (
     <WithModal text="Дасти" triggerType="action">
-      <Img src="/assets/book_data/images/Dusty.jpg" />
+      <Img src="./assets/book_data/images/Dusty.jpg" />
     </WithModal>
   );
 
