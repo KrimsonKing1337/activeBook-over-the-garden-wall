@@ -10,7 +10,7 @@ export const Page30 = () => {
   });
 
   const Comment = (
-    <WithModal text="оборвалась на середине." triggerType="author" mode="text">
+    <WithModal text="оборвалась на середине. " triggerType="author" mode="text">
       Здесь я немного описал собственный опыт применения общей анестезии, у меня было именно так
     </WithModal>
   );

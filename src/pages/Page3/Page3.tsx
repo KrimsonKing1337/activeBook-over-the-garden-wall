@@ -11,7 +11,7 @@ export const Page3 = () => {
   });
 
   const Comment = (
-    <WithModal text="будет уже не он»..." triggerType="author" mode="text">
+    <WithModal text="это будет уже не он»..." triggerType="author" mode="text">
       Этот вопрос мучает меня до сих пор.
       И если при моей жизни изобретут телепорты — я ими пользоваться не стану
     </WithModal>

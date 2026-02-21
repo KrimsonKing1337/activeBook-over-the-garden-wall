@@ -23,7 +23,7 @@ export const Page39 = () => {
   );
 
   const Comment2 = (
-    <WithModal text="эмоциональными существами.." triggerType="author" mode="text">
+    <WithModal text=" эмоциональными существами..." triggerType="author" mode="text">
       Тут отсылка на фильм Интерстеллар и компьютер, который выдал подобную фразу на вопрос,
       почему тот не на 100% честен с людьми
     </WithModal>
