@@ -16,6 +16,7 @@ export const Page41 = () => {
     id: 'page-41_caramelldansen',
     page: 41,
     src: './assets/book_data/audios/music/caramelldansen.mp3',
+    relativeVolume: 20,
     playOnLoad: false,
     loop: true,
   });
