@@ -4,11 +4,11 @@ export const Page12 = () => {
   return (
     <PageWrapper>
       <H1>
-        Глава 3.
+        Глава 3
       </H1>
 
       <H2>
-        Дурной сон.
+        Дурной сон
       </H2>
 
       <P>
