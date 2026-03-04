@@ -1,1 +1,7 @@
-# activeBook-over-the-garden-wall
+# По ту сторону изгороди
+Живая книга-пример в жанре sci-fi для демонстрации возможностей движка ActiveBook.
+Почитать можно здесь (не работает во встроенном браузере телеграмма и аналогов):\
+https://active-books.ru
+
+Репозиторий движка находится здесь:\
+https://github.com/KrimsonKing1337/activeBook-react-core
