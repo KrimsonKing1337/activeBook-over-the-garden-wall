@@ -29,6 +29,7 @@ export const Page0 = () => {
     <Page0Default
       header="По ту сторону изгороди."
       subHeader="Жанр: sci-fi. Кстати, здесь есть пасхалки"
+      audioInstForInit={audioInst}
       goCallback={goCallback}
     />
   );
