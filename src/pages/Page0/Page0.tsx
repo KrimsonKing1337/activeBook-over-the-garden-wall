@@ -13,7 +13,6 @@ export const Page0 = () => {
     page: 0,
     // todo: вернуть понятие oneShot, этот звук должен всегда проигрываться до конца
     src: './assets/book_data/audios/sounds/sword.mp3',
-    isInitAudio: true,
     fadeOutWhenUnload: false,
     onPlay() {
       vibrationOn(200);
@@ -29,7 +28,7 @@ export const Page0 = () => {
     <Page0Default
       header="По ту сторону изгороди."
       subHeader="Жанр: sci-fi. Кстати, здесь есть пасхалки"
-      audioInstForInit={audioInst}
+      audioSrcForInit="./assets/book_data/audios/sounds/sword.mp3"
       goCallback={goCallback}
     />
   );
