@@ -13,6 +13,7 @@ export const Page0 = () => {
     page: 0,
     // todo: вернуть понятие oneShot, этот звук должен всегда проигрываться до конца
     src: './assets/book_data/audios/sounds/sword.mp3',
+    isInitAudio: true,
     fadeOutWhenUnload: false,
     onPlay() {
       vibrationOn(200);
